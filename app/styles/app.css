@@ -10,13 +10,27 @@
 }
 
 .menu-item {
+    display: flex;
+    flex-wrap: wrap;
     flex-basis: 30%;
     max-height: 250px;
     border: solid 2px black;
 }
 
+.menu-item h4 {
+    flex-basis: 100%;
+    margin:  15px 15px;
+    font-size: 1.4em;
+}
+
 .menu-item img {
     max-width: 100%;
-    max-height: 100%;
+    max-height: 150px;
     margin: 0 auto;
+}
+
+.menu-item a {
+    flex-basis: 100%;
+    text-align: center;
+    margin: 10px 0;
 }
