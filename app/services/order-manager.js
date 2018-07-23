@@ -5,14 +5,13 @@ export default Service.extend({
     menuSelection: {
         Monday: {},
         Tuesday: {},
-        Wendesday: {},
-        Thurstday: {},
+        Wednesday: {},
+        Thursday: {},
         Friday: {}
     },
     setSelectedDay(day) {
         this.set('selectedDay', day);
     },
-
     chooseMenuOption(mealCategory, menuItemName) {
         this.set("menuSelection." + this.get(selectedDay) + "." + mealCategory, menuItemName);
     },
