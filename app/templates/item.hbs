@@ -1,6 +1,14 @@
 <h4>{{ model.name }}</h4>
 <img src="/images/{{model.image}}.jpg" alt="{{model.name}}">
 <p>{{model.rating}}</p>
+<div>
+    <select onchange={{action "changeCategory" value="target.value"}}>
+        <option value="breakfast">Breakfast</option>
+        <option value="lunch">Lunch</option>
+        <option value="dinner">Dinner</option>
+    </select>
+    <button {{action "chooseItem" food.name}}>Select Item</button>
+</div>
 <p>
     {{model.description}}
 </p>
